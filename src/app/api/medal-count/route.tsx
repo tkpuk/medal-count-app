@@ -1,4 +1,4 @@
-import { CountryMedals } from '@/types/countryMedals'
+import { CountryMedals } from '@/types/medal-count.types'
 import medals from './medals.json'
 
 export async function GET() {

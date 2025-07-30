@@ -1,0 +1,78 @@
+.table {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  /*  */
+  max-width: 40rem;
+  margin: 0.5rem auto;
+  font-family: Helvetica, sans-serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #898686;
+}
+
+.row {
+  display: flex;
+}
+
+.header,
+.cell {
+  flex: 1;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.rowHeader {
+  border-bottom: 3px solid #928a8a;
+}
+
+.rowMedal {
+  border-bottom: 1px solid #eeeeee;
+}
+
+.cellPos {
+  flex: 0 0 40px;
+  text-align: right;
+}
+
+.cellCountry {
+  flex: 2;
+  text-align: left;
+}
+
+.cellMedal {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.sortedBy {
+  border-top: 3px solid #928a8a;
+  cursor: default;
+}
+
+.total {
+  color: #6a6767;
+}
+
+.circle {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+}
+
+.circleGold {
+  composes: circle;
+  background-color: #ffd700;
+}
+
+.circleSilver {
+  composes: circle;
+  background-color: #c0c0c0;
+}
+
+.circleBronze {
+  composes: circle;
+  background-color: rgb(103, 57, 12);
+}
