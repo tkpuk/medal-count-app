@@ -17,7 +17,6 @@ export const MedalTable = ({ medals }: MedalTableProps) => {
   const defaultSortBy: SortBy = sortByValues.includes(sortParam)
     ? sortParam
     : 'gold'
-  console.log('defaultSortBy=', defaultSortBy)
   const [currentSortBy, setCurrentSortBy] = useState(defaultSortBy)
   const [topTenCountries, setTopTenCountries] = useState(
     sortMedals(medals, currentSortBy).slice(0, 10)
@@ -25,7 +24,6 @@ export const MedalTable = ({ medals }: MedalTableProps) => {
 
   const sortMedalsHandler = (sortBy: SortBy) => {
     if (sortBy != currentSortBy) {
-      console.log(sortBy)
       const medalsSorted = sortMedals(medals, sortBy)
       setTopTenCountries(medalsSorted.slice(0, 10))
       setCurrentSortBy(sortBy)

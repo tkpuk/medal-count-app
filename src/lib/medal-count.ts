@@ -10,8 +10,6 @@ export function sortMedals(medals: CountryMedals[], sortBy: SortBy) {
     const bSortByVal = b[sortBy]
 
     switch (sortBy) {
-      //   case 'gold':
-      //     return bSortByVal - aSortByVal
       case 'silver':
         return bSortByVal - aSortByVal || b['gold'] - a['gold']
       case 'bronze':

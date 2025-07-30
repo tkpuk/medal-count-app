@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  /*  */
   max-width: 40rem;
   margin: 0.5rem auto;
   font-family: Helvetica, sans-serif;
@@ -15,19 +14,19 @@
   display: flex;
 }
 
-.header,
-.cell {
-  flex: 1;
-  padding: 0.5rem;
-  text-align: center;
-}
-
 .rowHeader {
   border-bottom: 3px solid #928a8a;
 }
 
 .rowMedal {
   border-bottom: 1px solid #eeeeee;
+}
+
+.header,
+.cell {
+  flex: 1;
+  padding: 0.5rem;
+  text-align: center;
 }
 
 .cellPos {
