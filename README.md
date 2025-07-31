@@ -10,6 +10,12 @@ First, run the development server:
 npm run dev
 ```
 
+Make sure the following environment variable(s) are in your `.env.local` file.
+
+```bash
+MEDAL_COUNT_API_BASE_URL=http://localhost:3000/api
+```
+
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the app. Use following URLs to access the app.
 
 Home page: [http://localhost:3000](http://localhost:3000)
