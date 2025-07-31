@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic'
 import { MedalTable } from '@/components/MedalCount/MedalTable'
 import { CountryMedals } from '@/types/medal-count.types'
 
